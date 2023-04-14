@@ -16,9 +16,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "dependencies": {
-    "react-web-share": "https://github.com/kamit-transient/react-web-share#customize_hear_and_icons"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "^16 || ^17 || ^18",
     "react-dom": "^16 || ^17 || ^18"
