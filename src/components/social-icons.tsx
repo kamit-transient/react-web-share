@@ -11,13 +11,18 @@ export const SocialIcons = ({
   data,
   closeText,
   onClick,
+  header
 }: SocialIconsProps) => (
   <section
     role="dialog"
     aria-modal="true"
     className="rws-container web-share-fade-in-up"
   >
-    <Header title={data.title} />
+    {
+      header ? header : (
+        <Header title={data.title} ></Header>
+      )
+    }
     <div className="rws-icons">
       {sites.map((name) => (
         <Icon

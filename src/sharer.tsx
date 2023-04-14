@@ -58,6 +58,7 @@ export const RWebShare = memo((props: RWebShareProps) => {
               data={shareData}
               closeText={props.closeText}
               onClick={props.onClick}
+              header={props.header}
             />
           </Backdrop>
         </Portal>

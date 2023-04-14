@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface ShareData {
   text?: string;
   title?: string;
@@ -11,6 +13,8 @@ export interface RWebShareProps {
   sites?: string[];
   onClick?;
   disableNative?;
+  header?: ReactNode | undefined;
+
 }
 
 export interface SocialIconsProps {
@@ -19,6 +23,7 @@ export interface SocialIconsProps {
   sites: string[];
   data: Required<ShareData>;
   onClick?;
+  header?: ReactNode | undefined;
 }
 
 export interface IconProps {
