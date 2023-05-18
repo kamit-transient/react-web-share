@@ -14,6 +14,8 @@ export interface RWebShareProps {
   onClick?;
   disableNative?;
   header?: ReactNode | undefined;
+  className?: string;
+  iconsClassName?: string;
 
 }
 
@@ -24,6 +26,7 @@ export interface SocialIconsProps {
   data: Required<ShareData>;
   onClick?;
   header?: ReactNode | undefined;
+  className?: string
 }
 
 export interface IconProps {
