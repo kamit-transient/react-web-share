@@ -43,7 +43,7 @@ export const RWebShareUnStyled = memo((props: RWebShareProps) => {
   let containerClass = props.className;
   let iconsClassName = props.iconsClassName;
   return (
-    < div className={containerClass}>
+    <div className={containerClass}>
       {/* Overrides Children element's `onClick` event */}
       {cloneElement(props.children, {
         ...props.children?.props,
@@ -63,6 +63,6 @@ export const RWebShareUnStyled = memo((props: RWebShareProps) => {
         header={props.header}
       />
 
-    </>
+    </div>
   );
 });
